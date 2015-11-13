@@ -1,0 +1,10 @@
+load digit_data;
+[~, ctrs, ~] = kmeans(X, 10); 
+figure;
+show_digit(ctrs);
+[~, ctrs, ~] = kmeans(X, 20); 
+figure;
+show_digit(ctrs);
+[~, ctrs, ~] = kmeans(X, 50); 
+figure;
+show_digit(ctrs);
